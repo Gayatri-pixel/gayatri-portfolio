@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #A8E6A3, #4CAF50);
+  color: #333;
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #2E7D32;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+}
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 5px 0 10px;
+}
+.contact-info {
+  font-size: 0.95rem;
+}
+.contact-info a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* ===== Card Sections ===== */
+.card {
+  background: white;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+.card h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+.card h3 {
+  margin-top: 15px;
+  color: #2E7D32;
+  transition: color 0.3s;
+}
+.card h3:hover {
+  color: #1B5E20;
+}
+
+/* ===== Skills ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills span {
+  background: #E8F5E9;
+  color: #2E7D32;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.skills span:hover {
+  background: #C8E6C9;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* ===== Animations ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
